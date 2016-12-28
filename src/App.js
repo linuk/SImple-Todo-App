@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Todos from './Todos'
-import './App.css';
+import './App.css'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
 
 class App extends Component {
   constructor(props){
-    super(props);
+    super(props)
     this.state={
       load: false,
     }
@@ -38,4 +38,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App

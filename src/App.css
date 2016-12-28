@@ -4,13 +4,13 @@ body {
   background: #f3f3f3;
 }
 
-* {
+*:not(i) {
   font-family: 'Lato', sans-serif !important;
   font-weight: 300 ;
 }
 
 .App {
-  padding: 25px;
+  padding: 5px;
 }
 
 .App-header {
@@ -22,6 +22,7 @@ body {
 .done{
   text-decoration: line-through !important;
 }
+
 
 
 /*=================================
@@ -48,6 +49,17 @@ body {
 .listIn-leave.listIn-leave-active {
   transform: translateY(10vh);
   opacity: 0.01;
+  transition: all 500ms ease-in-out;
+}
+
+.listIn-appear {
+  transform: translateY(5vh);
+  opacity: 0;
+}
+
+.listIn-appear.listIn-appear-active {
+  transform: translateY(0vh);
+  opacity: 1;
   transition: all 500ms ease-in-out;
 }
 
