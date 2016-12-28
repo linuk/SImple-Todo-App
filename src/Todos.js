@@ -12,7 +12,7 @@ export default class Todos extends Component {
 				{id:2, task: "Watch Rouge One", done: false},
 				],
 			newTaskPattern: "^.{0,25}$",
-			showCompleted: false,
+			showCompleted: true,
 		}
 	}
 
