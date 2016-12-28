@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+body {
+  background: #f3f3f3;
+}
+
+* {
+  font-family: 'Lato', sans-serif !important;
+  font-weight: 300 ;
+}
+
+.App {
+  padding: 25px;
+}
+
+.App-header {
+  background-color: #3f51b5;
+  padding: 2px;
+  color: white;
+}
+
+.done{
+  text-decoration: line-through !important;
+}
+
+
+/*=================================
+=            Animation            =
+=================================*/
+
+.listIn-enter {
+  transform: translateY(5vh);
+  opacity: .1;
+
+}
+
+.listIn-enter.listIn-enter-active {
+  transform: translateY(0vh);
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.listIn-leave {
+  transform: translateY(0vh);
+  opacity: 1;
+}
+
+.listIn-leave.listIn-leave-active {
+  transform: translateY(10vh);
+  opacity: 0.01;
+  transition: all 500ms ease-in-out;
+}
+
+/**
+ *
+ * card
+ *
+ */
+
+.cardIn-enter {
+  transform: translateY(15vh);
+  opacity: .1;
+
+}
+
+.cardIn-enter.cardIn-enter-active {
+  transform: translateY(0vh);
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+
+.cardIn-appear {
+  transform: translateY(15vh);
+  opacity: 0;
+
+}
+
+.cardIn-appear.cardIn-appear-active {
+  transform: translateY(0vh);
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.cardIn-leave {
+  transform: translateY(0vh);
+  opacity: 1;
+}
+
+.cardIn-leave.cardIn-leave-active {
+  transform: translateY(10vh);
+  opacity: 0.01;
+  transition: all 500ms ease-in-out;
+}
+/*=====  End of Animation  ======*/
