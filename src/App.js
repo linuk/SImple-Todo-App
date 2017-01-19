@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Todos from './Todos'
+import { TodosContainer } from './TodosContainer'
 import './App.css'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
 
@@ -27,7 +27,9 @@ class App extends Component {
           transitionAppear={true} transitionAppearTimeout={500}
           transitionEnterTimeout={1000}
           transitionLeaveTimeout={300}>
-            <Todos/>
+            <h1 className={"mainTitle"}>Todo App</h1>
+            
+            <TodosContainer todoNumber={1}/>
           </ReactCSSTransitionGroup>
         </div>
       )

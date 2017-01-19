@@ -3,7 +3,7 @@ import { Cell, List, Textfield, Card, CardTitle, IconButton, Menu, MenuItem,Butt
 import { Todo } from "./Todo"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group' 
 
-export default class Todos extends Component {
+export class Todos extends Component {
 	constructor(props){
 		super(props)
 		this.state={
@@ -86,8 +86,9 @@ export default class Todos extends Component {
 
 		return (
 			<Cell 
-			col={4} tablet={6} phone={6}
-			offsetDesktop={4} offsetTablet={1} offsetPhone={0} 
+			className={"inlineBlock"}
+			col={4} tablet={12} phone={12}
+			offsetDesktop={0} offsetTablet={0} offsetPhone={0} 
 			align={"middle"}>
 			
 				<Card shadow={2} style={CardCSS}>
